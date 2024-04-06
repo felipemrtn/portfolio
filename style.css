@@ -10,7 +10,13 @@
     width: 100%;
     margin: 0 auto;
     min-height: 100vh;
-    background-color: rgb(77, 112, 124);
+    background-color: #4d707c;
+}
+
+@media screen and (max-width: 500px) { 
+    .container1 {
+        width: 100%;
+    }
 }
 
 .menu {
@@ -19,7 +25,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(84, 115, 126, 0.842);
+    background-color: #54737ed7;
     text-align: right;
     padding: 10px;
 }
@@ -101,12 +107,27 @@
     font-size: 1.3rem;
 }
 
+@media screen and (max-width: 950px) { 
+    .grid {
+        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        font-size: 1.1rem;
+    }
+}
+
 .projeto {
     text-align: center;
     width: 200px;
     height: 200px;
 }
 
+@media screen and (max-width: 500px) { 
+    .projeto {
+        width: 180px;
+        height: 200px;
+    }
+}
 
 .projeto img {
     background-size: contain;
@@ -114,6 +135,13 @@
     height: 150px;
     margin-top: 5px;
     border-radius: 75px;
+}
+
+@media screen and (max-width: 500px) { 
+    .projeto img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .projeto a {
@@ -134,11 +162,26 @@
     font-size: 1.3rem;
 }
 
+@media screen and (max-width: 950px) { 
+    .contato {
+        gap: 10px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+
 .item img {
     border-radius: 50%;
     background-size: contain;
     width: 180px;
     height: 180px;
+}
+
+@media screen and (max-width: 500px) { 
+    .item img {
+        width: 120px;
+        height: 120px;
+    }
 }
 
 .item img:hover {
