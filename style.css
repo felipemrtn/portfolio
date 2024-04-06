@@ -179,8 +179,10 @@
 @media screen and (max-width: 950px) { 
     .contato {
         gap: 10px;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -191,10 +193,19 @@
     height: 180px;
 }
 
+
+
+@media screen and (max-width: 680px) { 
+    .item img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 @media screen and (max-width: 500px) { 
     .item img {
-        width: 120px;
-        height: 120px;
+        width: 80px;
+        height: 80px;
     }
 }
 
