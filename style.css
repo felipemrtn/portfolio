@@ -37,6 +37,20 @@
     color: #ffffff;
 }
 
+@media screen and (max-width: 680px) { 
+    .menu a {
+        font-size: 1.0rem;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 450px) { 
+    .menu a {
+        font-size: 0.6rem;
+        margin: 0 10px;
+    }
+}
+
 .menu a:hover {
     text-decoration: underline;
 }
